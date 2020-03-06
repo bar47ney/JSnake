@@ -5,7 +5,16 @@ const ground = new Image();
 ground.src = "ground.png";
 
 const foodImg = new Image();
-foodImg.src = "food.png";
+foodImg.src = "serg.png";
+
+const lenaImg = new Image();
+lenaImg.src = "lena.png";
+
+const militaryImg = new Image();
+militaryImg.src = "military.png";
+
+const peachImg = new Image();
+peachImg.src = "pecah.png";
 
 let box = 32;
 
@@ -50,10 +59,11 @@ function drawGame(){
 
     ctx.drawImage(foodImg, food.x, food.y);
 
-    for(let i = 0; i < snake.length; i++)
+    ctx.drawImage(lenaImg, snake[0].x, snake[0].y );
+
+    for(let i = 1; i < snake.length; i++)
     {
-        ctx.fillStyle = i == 0 ? "green" : "red";
-        ctx.fillRect(snake[i].x, snake[i].y, box, box)
+        ctx.drawImage(peachImg, snake[i].x, snake[i].y);
     }
 
     ctx.fillStyle = "white";
