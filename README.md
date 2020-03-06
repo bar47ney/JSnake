@@ -1,1 +1,1 @@
-# JSnake [https://bar47ney.github.io/JSnake/]
+# [JSnake](https://bar47ney.github.io/JSnake/)
